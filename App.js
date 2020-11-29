@@ -1,7 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+//Launcher Activity
+//main
 
+//import 라이브러리fl
+import { StatusBar } from 'expo-status-bar';
+import *as React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+//export
 export default function App() {
   return (
     <View style={styles.container}>
@@ -10,7 +14,7 @@ export default function App() {
     </View>
   );
 }
-
+//CSS
 const styles = StyleSheet.create({
   container: {
     flex: 1,
