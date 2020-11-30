@@ -1,7 +1,7 @@
 //Launcher Activity
 //main
 
-//import 라이브러리
+//import library
 import { StatusBar } from 'expo-status-bar';
 import *as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
