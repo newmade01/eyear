@@ -18,6 +18,9 @@ API: Google AI API(speech to text)
 
 -------------------------------------------------------------------------------------------------------------------------------------
 [Branches-main]
+
 -transcribe_streaming_mic.py-실시간 text출력 
+
 -sound_recorder.py- 사운드 10초 저장 
+
 -quickstart.py-file출력 
