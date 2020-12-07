@@ -10,11 +10,15 @@
 -음성->text 출력
 
 
-환경: ios + Microsoft Azure(클라우드) + ReactNative(visual Studio code, expo) + Microsoft MachinLearning Studio + Google Cloud+ (가상컴퓨팅 크롤링작업, 컨테이너 생성)구름IDE
+환경: 
+ios + Microsoft Azure(클라우드) + ReactNative(visual Studio code, expo) + Microsoft MachinLearning Studio + Google Cloud+ (가상컴퓨팅 크롤링작업, 컨테이너 생성)구름IDE
+
 
 협업 프로그램: zeplin+Adobe XD
 
+
 API 및 샘플코드: Google AI API(speech to text), Beautifulsoup(crawling)
+
 
 머신러닝 작업 사이트: https://teachablemachine.withgoogle.com/train 
 
