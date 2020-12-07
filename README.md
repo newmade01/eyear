@@ -17,7 +17,7 @@ ios + Microsoft Azure(클라우드) + ReactNative(visual Studio code, expo) + Mi
 [협업 프로그램] zeplin+Adobe XD
 
 
-[API 및 샘플코드, 라이브러리] Google AI API(speech to text), 셀리니움
+[API 및 샘플코드, 라이브러리] Google AI API(speech to text), 셀리니움()
 
 
 [머신러닝 작업 사이트] https://teachablemachine.withgoogle.com/train 
