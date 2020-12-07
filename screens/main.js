@@ -7,12 +7,11 @@ export default class main extends React.Component{
         super(props);
     }
 
-    render(){
+    render(){//화면
         return(
-
-
-            
-            
+            <View style={styles.container}>
+                <Text>Login Screen</Text>
+            </View>
 
         )
     }
