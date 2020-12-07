@@ -10,7 +10,7 @@ export default class main extends React.Component{
     render(){//화면
         return(
             <View style={styles.container}>
-                <Text>Login Screen</Text>
+                <Text>첫화면</Text>
             </View>
 
         )

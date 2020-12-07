@@ -4,7 +4,7 @@
 
 기능:-위험도를 측정한 경고음출력 -음성->text 출력
 
-환경: ios + Microsoft Azure(클라우드) + ReactNative(visual Studio code, expo) + Microsoft MachinLearning Studio + Google Cloud
+환경: ios + Microsoft Azure(클라우드) + ReactNative(visual Studio code, expo) + Microsoft MachinLearning Studio + Google Cloud+ (가상컴퓨팅)구름IDE
 
 협력 프로그램: zeplin+Adobe XD
 
