@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Platform, StyleSheet, View, Button, Text } from 'react-native';
 import { color } from 'react-native-reanimated';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { back } from 'react-native/Libraries/Animated/src/Easing';
 
 
@@ -13,7 +14,7 @@ export default class main extends React.Component {
 
     render() {//화면
         return (
-            <view style={styles.container}>
+            <SafeAreaView style={styles.container}>
                 <View style={styles.head}>
                     <View style={styles.scrollBT}>
                         <Button title="언어선택" />
@@ -23,7 +24,7 @@ export default class main extends React.Component {
                         LOE
                     </View>
                     <View style={styles.set}>
-                        설정
+                        set
                     </View>
                 </View>
 
@@ -51,20 +52,28 @@ export default class main extends React.Component {
                         <Button title="음성등록" />
                     </View>
                     <View style={styles.mainBT}>
-                        <Button title="음성등록" />
+                        <Button title="텍스트" />
+                    </View>
+                    <View style={styles.mainBT}>
+                        <Button title="전체화면보기" />
                     </View>
                 </View>
 
-            </view>
+            </SafeAreaView>
         );
     }
 
 }
 
 const styles = StyleSheet.create({
-
+    container:{
+        flex: 1,
+        backgroundColor: 'blue',
+    },
 
     headName: {
+        flex: 1,
+        flexDirection: 'row',
         width: 69,
         height: 53,
         fontFamily: "SFUIDisplay",
@@ -78,6 +87,7 @@ const styles = StyleSheet.create({
     },
 
     mainBT: {
+        flex: 1,
         width: 61,
         height: 61,
         borderRadius: 6,
@@ -92,6 +102,8 @@ const styles = StyleSheet.create({
     },
 
     scrollBT: {
+        flex: 1,
+        flexDirection: 'row',
         width: 70,
         height: 21,
         borderRadius: 4,
@@ -99,7 +111,7 @@ const styles = StyleSheet.create({
     },
 
     center: {
-        center: true,
+        alignSelf: 'center',
         width: 291,
         height: 255,
         borderRadius: 6,
@@ -114,6 +126,8 @@ const styles = StyleSheet.create({
     },
 
     set: {
+        flex: 1,
+        flexDirection: 'row',
         width: 24.8,
         height: 25.5,
         backgroundColor: "#ffffff",
@@ -125,6 +139,7 @@ const styles = StyleSheet.create({
     bottom: {
         flex: 1,
         flexDirection: 'row',
+        width:'100%'
     },
 
     head: {
@@ -133,7 +148,6 @@ const styles = StyleSheet.create({
     },
 
     centerBT: {
-        
         width: 140,
         height: 68,
         borderRadius: 6,
@@ -147,7 +161,8 @@ const styles = StyleSheet.create({
         shadowOpacity: 1
 
 
-    }
+    },
+    
 
 
 
