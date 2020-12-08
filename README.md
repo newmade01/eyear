@@ -1,7 +1,7 @@
 # eyear
 블루투스 이어폰 또는 청각 장애인들을 위한 텍스트, 진동을 통한 알림 받는 애플리케이션
 
-[언어] Python, javaScript
+[언어] Python, javaScript, react-native
 
 [기능]
 
