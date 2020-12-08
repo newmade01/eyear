@@ -111,6 +111,7 @@ const styles = StyleSheet.create({
     },
 
     center: {
+       flexDirection:'column',
         alignSelf: 'center',
         width: 291,
         height: 255,
@@ -138,8 +139,11 @@ const styles = StyleSheet.create({
 
     bottom: {
         flex: 1,
+        alignSelf: 'center',
         flexDirection: 'row',
-        width:'100%'
+        position: 'absolute',
+        bottom: 0
+        
     },
 
     head: {
