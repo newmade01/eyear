@@ -28,7 +28,19 @@ export default class main extends React.Component {
                 </View>
 
                 <View style={styles.center}>
-                    백그라운드에서 사용하나요?
+                    <view style={styles.centerText}>
+                        해당 앱 백그라운드 사용을 허가하시겠습니까?
+                    </view>
+
+                    <view >
+                        <View style={styles.centerBT}>
+                            <button title="나중에하기" />
+                        </View>
+                        <View style={styles.centerBT}>
+                            <button title="확인" />
+                        </View>
+
+                    </view>
                 </View>
 
                 <View style={styles.bottom}>
@@ -66,7 +78,7 @@ const styles = StyleSheet.create({
     },
 
     mainBT: {
-        width: 80,
+        width: 61,
         height: 61,
         borderRadius: 6,
         backgroundColor: "#ffffff",
@@ -87,6 +99,7 @@ const styles = StyleSheet.create({
     },
 
     center: {
+        center: true,
         width: 291,
         height: 255,
         borderRadius: 6,
@@ -109,15 +122,33 @@ const styles = StyleSheet.create({
         borderColor: "rgba(255, 255, 255, 0)"
     },
 
-    bottom:{
-        flex: 1,
-        flexDirection: 'row',  
-    },
-
-    head:{
+    bottom: {
         flex: 1,
         flexDirection: 'row',
+    },
+
+    head: {
+        flex: 1,
+        flexDirection: 'row',
+    },
+
+    centerBT: {
+        
+        width: 140,
+        height: 68,
+        borderRadius: 6,
+        backgroundColor: "#5d9295",
+        shadowColor: "rgba(10, 31, 68, 0.12)",
+        shadowOffset: {
+            width: 0,
+            height: 18
+        },
+        shadowRadius: 18,
+        shadowOpacity: 1
+
+
     }
+
 
 
 
