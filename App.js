@@ -6,15 +6,16 @@ import *as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';//navigation 활성화
 import {createStackNavigator} from '@react-navigation/stack';
-
+import 'react-native-gesture-handler';
 import main from './screens/main';
+import addVoice from './screens/addVoice';
 
 
 const Stack=createStackNavigator();
 
 
 //export
-export default function App() {
+export default function App( ) {
   return (//화면 반환
     //Navigationxm틀//const stack 변수명에따라 변경됨 . navigator
     <NavigationContainer> 
@@ -24,12 +25,18 @@ export default function App() {
         }}
       >
       
-      <Stack.Screen name="첫화면" component={main}/>
-      
+      <Stack.Screen name="main" component={main}/>
+      <Stack.Screen name="addVoice" component={addVoice}/>
       </Stack.Navigator>
     </NavigationContainer>
+    
   );
 }
+
+
+
+
+
 
 //CSS
 const styles = StyleSheet.create({
@@ -40,3 +47,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+
+

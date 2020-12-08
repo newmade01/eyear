@@ -3,21 +3,28 @@ import { Platform, StyleSheet, View, Button, Text } from 'react-native';
 import { color } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { back } from 'react-native/Libraries/Animated/src/Easing';
-
-
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import 'react-native-gesture-handler';
 export default class main extends React.Component {
 
     constructor(props) {
         super(props);
     }
-
+  
 
     render() {//화면
+       
+
         return (
             <SafeAreaView style={styles.container}>
+                
                 <View style={styles.head}>
                     <View style={styles.scrollBT}>
-                        <Button title="언어선택" />
+                        <Button 
+                            title="언어선택" 
+
+                        />
                     </View>
 
                     <View style={styles.headName}>
@@ -66,7 +73,9 @@ export default class main extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    container:{
+   
+
+    container: {
         flex: 1,
         backgroundColor: 'blue',
     },
@@ -111,7 +120,7 @@ const styles = StyleSheet.create({
     },
 
     center: {
-       flexDirection:'column',
+        flexDirection: 'column',
         alignSelf: 'center',
         width: 291,
         height: 255,
@@ -143,7 +152,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         position: 'absolute',
         bottom: 0
-        
+
     },
 
     head: {
@@ -165,8 +174,8 @@ const styles = StyleSheet.create({
         shadowOpacity: 1
 
 
-    },
-    
+    }
+
 
 
 
